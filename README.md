@@ -30,6 +30,11 @@ Then launch the flows
 The results are placed under results/
 
 
+## my results/
+
+Debian GNU/Linux 2.6.32-5-amd64, Ruby 2.0.0-p195, Redis 2.6.7, ruote and co as per Gemfile.lock
+
+
 ## license
 
 MIT
