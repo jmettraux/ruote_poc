@@ -1,12 +1,17 @@
 
 require 'yajl'
 require 'ruote'
-require 'ruote-redis'
+#require 'ruote-redis'
+require 'ruote/fs'
 
+#ruote =
+#  Ruote::Dashboard.new(
+#    Ruote::Worker.new(
+#      Ruote::Redis::Storage.new(:db => 15, :thread_safe => true)))
 ruote =
   Ruote::Dashboard.new(
     Ruote::Worker.new(
-      Ruote::Redis::Storage.new(:db => 15, :thread_safe => true)))
+      Ruote::FsStorage.new('ruote_work')))
 
 ruote.noisy = ENV['NOISY'] == 'true'
 
