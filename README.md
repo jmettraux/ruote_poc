@@ -29,6 +29,14 @@ Then launch the flows
 
 The results are placed under results/
 
+To observe the worker activity, run them with NOISY=true:
+
+```
+NOISY=true . worker.sh
+```
+
+You'll be greated with colorful activity streaming to the stdout.
+
 
 ## my results/
 
